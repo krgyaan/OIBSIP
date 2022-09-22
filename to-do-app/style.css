@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+.container, .task-list {
+	width: 40%;
+	top: 30%;
+	left: 50%;
+	background: white;
+	border-radius: 10px;
+	min-width: 450px;
+	position: absolute;
+	min-height: 100px;
+	transform: translate(-50%, -50%);
+}
+.heading{
+	text-align: center;
+	margin-top: 5%;
+	font-family: 'Leckerli One', cursive;
+	letter-spacing: 2px;
+	font-size: 40px;
+}
+.task-list {
+	margin-top: 200px;
+	overflow-y: hidden;
+}
+.newtask {
+	position: relative;
+	padding: 30px 20px;
+}
+
+.newtask input {
+	width: 75%;
+	height: 45px;
+	padding: 12px;
+	color: #111111;
+	position: relative;
+	border-radius: 5px;
+	font-family: 'Just Another Hand', cursive;
+	font-size: 25px;
+	letter-spacing: 1px;
+	border: 2px solid #d1d3d4;
+}
+
+.newtask input:focus {
+	outline: none;
+}
+
+.newtask button {
+	position: relative;
+	float: right;
+	font-family: 'Just Another Hand', cursive;
+	letter-spacing: 1px;
+	font-size: 30px;
+	background-color: #0d75ec;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	width: 20%;
+	height: 45px;
+	border-radius: 5px;
+}
+
+#tasks {
+	border-radius: 10px;
+	width: 100%;
+	position: relative;
+	background-color: #ffffff;
+	padding: 30px 20px;
+	margin-top: 10px;
+}
+
+.task {
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #939697;
+	cursor: pointer;
+	background-color: #c6e6c5;
+	height: 50px;
+	margin-bottom: 8px;
+	padding: 5px 10px;
+	overflow-y: auto;
+}
+
+.task span {
+	font-family: 'Just Another Hand', cursive;
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+.task span:hover{
+	text-decoration: line-through;
+	text-decoration-color: green;
+}
+.task button {
+	background-color: #a40a0a;
+	color: #ffffff;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	height: 100%;
+	width: 40px;
+	border-radius: 5px;
+}
